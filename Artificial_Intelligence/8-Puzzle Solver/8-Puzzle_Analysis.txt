@@ -1,0 +1,61 @@
+Heuristics vs Uninformed
+
+I created functions for calculating the amount of misplaced squares and also for counting distance between the
+squares are their goal state.
+
+Both the misplaced squares and distances heuristics are admissible because they never overestimate the cost of
+reaching the goal state. Since they are admissible, these heuristics when implemented correctly will be much more
+cost effective than the uninformed search that I have created.
+
+My data analysis for comparing uninformed search to my informed searches was done by first starting with the most
+simple input and then making legal tile moves one at a time and then running my program. This was effective because
+it clearly showed which inputs each search method was able to handle and also giving me the specific run times for
+different complexities of inputs. In my experience, the more moves that are required to be taken to reach the goal
+state, the more complex the input.
+
+Distance heuristic:
+
+The limitation of the distance heuristic is that it considers each tile independently,
+while in fact tiles interfere with each other.
+The nice thing about the distance heuristic is that if you are only a few moves away it will solve the puzzle
+much faster than using uninformed search.
+
+Distance Heuristic run times for varying complexities of initial states:
+(5, 2, 8, 4, 1, 7, 0, 3, 6): My system was unable to solve the puzzle using this initial state.
+(1, 2, 3, 0, 5, 6, 4, 7, 8): This is a much easier initial state, using the distance heuristic my program solved
+it in only three runs (Best case scenario). When my uninformedSearch method was given this input it took it ran
+through the program 39 times.
+(0, 2, 3, 1, 5, 6, 4, 7, 8): Given this input my informedSearchDistance method was able to reach the goal state in
+best case time, 4. When my uninformedSearch method was given this input, it ran 584 times.
+
+After several more tests it was obvious that the distance heuristic outshined the uninformed search in every single
+way. However, it was not always executing in base case run time. For example, given the input
+(2, 0, 3, 1, 4, 6, 7, 5, 8), the distance heuristic search ran 21 times. This can be solved in only 5 moves. 21 runs
+was still exception though compared to uninformed search's 519 runs.
+
+
+Misplaced tiles heuristic:
+
+This can be called a greedy heuristic because it immediately selects the next node to expand upon based on just
+knowing how many are misplaced, rather than knowing how far they are from their goal spots.
+
+Misplaced tiles heuristic for varying initial states:
+(2, 0, 3, 1, 4, 6, 7, 5, 8): Misplaced tiles handled this input much better than the distance heuristics
+and uninformed search. It found the goal state in only 5 runs, which is best case time complexity.
+(5, 2, 8, 4, 1, 7, 0, 3, 6): This was a complex initial state that I came up with. The misplaced tiles heuristic
+was unable to solve the puzzle on my machine.
+(1, 3, 0, 4, 2, 6, 7, 5, 8): The misplaced tiles heuristic also solved this puzzle in best case time, 4 runs.
+(1, 3, 6, 4, 0, 8, 7, 2, 5): After trying several different inputs this is the first one that the heuristic either
+did not crash or solved the puzzle in best case time. It solved the puzzle in 24 runs which was still considerably
+fast. I tested this input on uninformedSearch and it was unable to solve the puzzle on my machine. This was the only
+input that I tried where the distance heuritic was able to beat the misplaced heuristic, solving the puzzle in 8
+runs which is best case time.
+
+Overall, this was the most impressive of the two heuristics that I tried for simpler inputs.
+It solved almost all given inputs in best case time. The distance heuristic was able to beat it in a few cases though.
+I believe this is because the misplaced heuristic is greedy and given more complex states,
+it will begin to make worse and less educated decisions. As you can see from my graph on my pdf
+that the misplaced tiles heuristic failed to run for more complicated inputs.
+
+From my graph and from my analysis it is easy to see that the uninformed search method is pretty much unusable unless the
+input is very simple and does not have a very big path depth. 
