@@ -1,0 +1,522 @@
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<title>PackFinder</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<script src="https://use.fontawesome.com/a686b3c76b.js"></script>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body class="sched">
+	<nav class="navbar navbar-toggleable-md navbar-light">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<a class="navbar-brand" href="#"><img class="navLogo" src="images/logo_white.png" /></a>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link btn hvr-underline-from-center" href="profile.html">Profile</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link btn hvr-underline-from-center" href="support.html">Support</a>
+				</li>
+				<li>
+					<a class="nav-link btn hvr-underline-from-center logout" href="index.html">Log Out</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<div class="container weekSchedule">
+		<div class="row scheduleTB">
+			<div class="col-12 col-lg-6 messageBoard">
+				<h2>Bloomington Rider Board</h2>
+				<div class="card">
+					<div class="card-block">
+						<!-- <h4 class="card-text" style="text-style:bold;">
+						See who is riding near you this week!
+					</h4> -->
+					<ul class="list-group" id="scroll" style="height:320px; overflow:auto; overflow-y:auto;">
+						<!-- <li class="list-group-item "> -->
+						<div class="message-container container">
+							<div class="row">
+								<div class="col-12 col-md-2">
+									<img src="images/eric-cartman.png" style="height:40px;  border-radius: 50%"/>
+								</div>
+								<div class="col-8">
+									<p>
+										Going on a ride on the 15th at 4. Looking for more people! Any skill level is welcome.
+									</p>
+								</div>
+								<div class="col-2">
+									<a href="#" class="card-link"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+						<!-- <li class="list-group-item "> -->
+						<div class="container message-container">
+							<div class="row">
+								<div class="col-12 col-md-2">
+									<img src="images/craig-tucker.png" draggable="true" ondragstart="drag(event)" style="height:40px; border-radius: 50%"/>
+								</div>
+								<div class="col-8">
+									<p>
+										Looking to get a good pack forming on the 13th! Perferably skilled riders.
+									</p>
+								</div>
+								<div class="col-2">
+									<a href="#" class="card-link"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+						<!-- </li> -->
+						<!-- <li class="list-group-item "> -->
+						<div class="container message-container">
+							<div class="row">
+								<div class="col-12 col-md-2">
+									<img src="images/kyle-broflovski.png" draggable="true" ondragstart="drag(event)" style="height:40px; border-radius: 50%"/>
+								</div>
+								<div class="col-8">
+									<p>
+										Recovery ride on the 16th if anyone wants to join
+									</p>
+								</div>
+								<div class="col-2">
+									<a href="#" class="card-link"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+						<!-- </li> -->
+						<!-- <li class="list-group-item "> -->
+						<div class="container message-container">
+							<div class="row">
+								<div class="col-12 col-md-2">
+									<img src="images/wendy-testaburger.png" draggable="true" ondragstart="drag(event)" style="height:40px; border-radius: 50%"/>
+								</div>
+								<div class="col-8">
+									<p>
+										Long distance ride to Griffey on the 13th! Looking for fun people!
+									</p>
+								</div>
+								<div class="col-2">
+									<a href="#" class="card-link"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+						<!-- </li> -->
+						<!-- <li class="list-group-item "> -->
+						<div class="container message-container">
+							<div class="row">
+								<div class="col-12 col-md-2">
+									<img src="images/jimmy-valmer.png" draggable="true" ondragstart="drag(event)" style="height:40px; border-radius: 50%"/>
+								</div>
+								<div class="col-8">
+									<p>
+										Doing sprints in Monroe forest tomorrow if anyone wants to join!
+									</p>
+								</div>
+								<div class="col-2">
+									<a href="#" class="card-link"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+						<!-- </li> -->
+						<!-- <li class="list-group-item "> -->
+						<div class="container message-container">
+							<div class="row">
+								<div class="col-12 col-md-2">
+									<img src="images/kyle-broflovski.png" draggable="true" ondragstart="drag(event)" style="height:40px; border-radius: 50%"/>
+								</div>
+								<div class="col-8">
+									<p>
+										Looking for new riders for our little 5 team! Ride on the 14th
+									</p>
+								</div>
+								<div class="col-2">
+									<a href="#" class="card-link"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+						<!-- </li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-lg-6 scheduleHelper">
+			<h2>Customize Your Schedule</h2>
+			<div class="card" >
+				<div class="card-block">
+					<h4 class="card-title">Schedule a new ride</h4>
+					<p class="card-text">To schedule a ride simply select an intensity and click on the calendar in the times that you would like to ride!</p>
+				</div>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item"><a class="color-picker blue" onclick="changeColor(true)"></a> Casual/Social</li>
+					<li class="list-group-item"><a class="color-picker yellow" onclick="changeColor(false)"></a> Moderate</li>
+					<li class="list-group-item"><a class="color-picker red" onclick="changeColor()"></a> Hammer</li>
+				</ul>
+				<div class="card-block">
+					<a href="#" class="ghost-button-full-color submit">Save Schedule</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-lg-4 info">
+			<h2>Invite Friends</h2>
+			<div class="card" >
+				<div class="card-block">
+					<p class="card-text">To invite friends on your rides simply drag their icons onto one of your rides and they will be notified when you save your schedule.</p>
+					<hr />
+				</div>
+				<div class="container inviteFriends">
+					<div class="row">
+						<div class="col-6 col-md-4" ondrop="drop(event)" ondragover="allowDrop(event)">
+							<img id="cartman" src="images/eric-cartman.png" draggable="true" ondragstart="drag(event)" style="height:35px; border-radius: 50%;"/>
+						</div>
+						<div class="col-6 col-md-4" ondrop="drop(event)" ondragover="allowDrop(event)">
+							<img id="kenny" src="images/kenny-mccormick.png" draggable="true" ondragstart="drag(event)" style="height:35px; border-radius: 50%"/>
+						</div>
+						<div class="col-6 col-md-4" ondrop="drop(event)" ondragover="allowDrop(event)">
+							<img id="stan" src="images/stan-marsh.png" draggable="true" ondragstart="drag(event)" style="height:35px; border-radius: 50%"/>
+						</div>
+						<div class="col-6 col-md-4" ondrop="drop(event)" ondragover="allowDrop(event)">
+							<img id="kyle" src="images/kyle-broflovski.png" draggable="true" ondragstart="drag(event)" style="height:35px; border-radius: 50%"/>
+						</div>
+						<div class="col-6 col-md-4" ondrop="drop(event)" ondragover="allowDrop(event)">
+							<img id="jimmy" src="images/jimmy-valmer.png" draggable="true" ondragstart="drag(event)" style="height:35px; border-radius: 50%"/>
+						</div>
+						<div class="col-6 col-md-4" ondrop="drop(event)" ondragover="allowDrop(event)">
+							<img id="wendy" src="images/wendy-testaburger.png" draggable="true" ondragstart="drag(event)" style="height:35px; border-radius: 50%"/>
+						</div>
+						<div class="col-6 col-md-4" ondrop="drop(event)" ondragover="allowDrop(event)">
+							<img id="craig" src="images/craig-tucker.png" draggable="true" ondragstart="drag(event)" style="height:35px; border-radius: 50%"/>
+						</div>
+						<div class="col-12" ondrop="drop(event)" ondragover="allowDrop(event)">
+							<a class="hvr-underline-from-center showMore">Show More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-lg-8 scheduleTB">
+			<table>
+				<thead>
+					<tr>
+						<th>
+							<span class="long"><i class="fa fa-clock-o fa-3x" aria-hidden="true"></i></span>
+							<span class="short"><i class="fa fa-clock-o fa-2x" aria-hidden="true"></i></span>
+						</th>
+						<th>
+							<span class="day">11</span>
+							<span class="long">Mon</span>
+							<span class="short">Mon</span>
+						</th>
+						<th>
+							<span class="day">12</span>
+							<span class="long">Tues</span>
+							<span class="short">Tue</span>
+						</th>
+						<th>
+							<span class="day">13</span>
+							<span class="long">Wend</span>
+							<span class="short">We</span>
+						</th>
+						<th>
+							<span class="day">14</span>
+							<span class="long">Thur</span>
+							<span class="short">Thur</span>
+						</th>
+						<th>
+							<span class="day">15</span>
+							<span class="long">Fri</span>
+							<span class="short">Fri</span>
+						</th>
+						<th>
+							<span class="day">16</span>
+							<span class="long">Sat</span>
+							<span class="short">Sat</span>
+						</th>
+						<th>
+							<span class="day">17</span>
+							<span class="long">Sun</span>
+							<span class="short">Sun</span>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr id="drag1">
+						<td class="hour" rowspan="4"><span>1:00</span></td>
+						<td id="m_1" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="t_1" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="w_1" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="r_1" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="f_1" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="s_1" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="u_1" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+					<tr>
+						<td id="m_1:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="t_1:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="w_1:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="r_1:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="f_1:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="s_1:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="u_1:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+					<tr>
+						<td id="m_1:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="t_1:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="w_1:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="r_1:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="f_1:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="s_1:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="u_1:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+					<tr>
+						<td id="m_1:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="t_1:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="w_1:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="r_1:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="f_1:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="s_1:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="u_1:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+					<tr>
+						<td class="hour" rowspan="4"><span>2:00</span></td>
+						<td id="m_2" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="t_2" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="w_2" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="r_2" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="f_2" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="s_2" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="u_2" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+					<tr>
+						<td id="m_2:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="t_2:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="w_2:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="r_2:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="f_2:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="s_2:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="u_2:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+					<tr>
+						<td id="m_2:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="t_2:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="w_2:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="r_2:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="f_2:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="s_2:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="u_2:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+					<tr>
+						<td id="m_2:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="t_2:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="w_2:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="r_2:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="f_2:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="s_2:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="u_2:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+					<tr>
+						<td class="hour" rowspan="4"><span>3:00</span></td>
+						<td id="m_3" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="t_3" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="w_3" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="r_3" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="f_3" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="s_3" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="u_3" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+					<tr>
+						<td id="m_3:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="t_3:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="w_3:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="r_3:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="f_3:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="s_3:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="u_3:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+					<tr>
+						<td id="m_3:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="t_3:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="w_3:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="r_3:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="f_3:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="s_3:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="u_3:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+					<tr>
+						<td id="m_3:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="t_3:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="w_3:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="r_3:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="f_3:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="s_3:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="u_3:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+					<tr>
+						<td class="hour" rowspan="4"><span>4:00</span></td>
+						<td id="m_4" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="t_4" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="w_4" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="r_4" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="f_4" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="s_4" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="u_4" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+					<tr>
+						<td id="m_4:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="t_4:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="w_4:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="r_4:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="f_4:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="s_4:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="u_4:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+					<tr>
+						<td id="m_4:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="t_4:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="w_4:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="r_4:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="f_4:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="s_4:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="u_4:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+					<tr>
+						<td id="m_4:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="t_4:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="w_4:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="r_4:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="f_4:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="s_4:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="u_4:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+					<tr>
+						<td class="hour" rowspan="4"><span>5:00</span></td>
+						<td id="m_5" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="t_5" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="w_5" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="r_5" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="f_5" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="s_5" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="u_5" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+					<tr>
+						<td id="m_5:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="t_5:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="w_5:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="r_5:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="f_5:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="s_5:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="u_5:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+					<tr>
+						<td id="m_5:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="t_5:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="w_5:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="r_5:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="f_5:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="s_5:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="u_5:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+					<tr>
+						<td id="m_5:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="t_5:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="w_5:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="r_5:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="f_5:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="s_5:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="u_5:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+					<tr>
+						<td class="hour" rowspan="4"><span>6:00</span></td>
+						<td id="m_6" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="t_6" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="w_6" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="r_6" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="f_6" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="s_6" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="u_6" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+					<tr>
+						<td id="m_6:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="t_6:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="w_6:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="r_6:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="f_6:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="s_6:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="u_6:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+					<tr>
+						<td id="m_6:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="t_6:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="w_6:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="r_6:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="f_6:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="s_6:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="u_6:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+					<tr>
+						<td id="m_6:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="t_6:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="w_6:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="r_6:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="f_6:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="s_6:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="u_6:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+					<tr>
+						<td class="hour" rowspan="4"><span>7:00</span></td>
+						<td id="m_7" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="t_7" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="w_7" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="r_7" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="f_7" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="s_7" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="u_7" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+					<tr>
+						<td id="m_7:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="t_7:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="w_7:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="r_7:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="f_7:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="s_7:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="u_7:15" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+					<tr>
+						<td id="m_7:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="t_7:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="w_7:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="r_7:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="f_7:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="s_7:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="u_7:30" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+					<tr>
+						<td id="m_7:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="t_7:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="w_7:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="r_7:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="f_7:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="s_7:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+						<td id="u_7:45" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="js/schedule.js"></script>
+</body>
+</html>

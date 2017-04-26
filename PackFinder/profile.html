@@ -1,0 +1,401 @@
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<title>PackFinder</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<script src="https://use.fontawesome.com/a686b3c76b.js"></script>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body class="profile">
+	<nav class="navbar navbar-toggleable-md navbar-light">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<a class="navbar-brand" href="#"><img class="navLogo" src="images/logo_white.png" /></a>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link btn hvr-underline-from-center" href="schedule.html">Schedule</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link btn hvr-underline-from-center" href="support.html">Support</a>
+				</li>
+				<li class="pull-right">
+					<a class="nav-link btn hvr-underline-from-center logout pull-right" href="index.html">Log Out</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container profileContainer">
+		<div class="row">
+			<div class="col-12 col-md-5 col-lg-4">
+				<div class="card">
+					<img class="card-img-top" src="images/profilePic.jpg" alt="Jack Garlick">
+					<div class="card-block">
+						<h4 class="card-title">Jack Garlick</h4>
+						<p class="card-text">Competitive cyclist riding for Phi Sigma Kappa's Little 500 bike team. Totally open to riding with anyone!</p>
+					</div>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">Noblesville, IN</li>
+						<li class="list-group-item">Intermediate</li>
+					</ul>
+					<div class="card-block">
+						<a href="#" class="card-link"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
+						<a href="#" class="card-link"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<div class="card friends-list">
+					<h2>Friends</h2>
+					<div class="card-block">
+						<!-- <h4 class="card-text" style="text-style:bold;">
+						See who is riding near you this week!
+					</h4> -->
+					<ul class="list-group" style="height:400px; overflow:auto; overflow-y:auto">
+						<!-- <li class="list-group-item "> -->
+						<div class="friend-container container">
+							<div class="row">
+								<div class="col-2">
+									<img id="cartman" src="images/eric-cartman.png" draggable="true" ondragstart="drag(event)" style="height:40px; border-radius: 50%"/>
+								</div>
+								<div class="col-2">
+
+								</div>
+								<div class="col-6">
+									<p>
+										Eric Cartman
+									</p>
+								</div>
+								<div class="col-2">
+									<i class="fa fa-plus" aria-hidden="true"></i>
+								</div>
+							</div>
+						</div>
+						<!-- <li class="list-group-item "> -->
+						<div class="container friend-container">
+							<div class="row">
+								<div class="col-2">
+									<img id="craig" src="images/craig-tucker.png" draggable="true" ondragstart="drag(event)" style="height:40px; border-radius: 50%"/>
+								</div>
+								<div class="col-2">
+
+								</div>
+								<div class="col-6">
+									<p>
+										Craig Tucker
+									</p>
+								</div>
+								<div class="col-2">
+									<i class="fa fa-plus" aria-hidden="true"></i>
+								</div>
+							</div>
+						</div>
+						<!-- </li> -->
+						<!-- <li class="list-group-item "> -->
+						<div class="container friend-container">
+							<div class="row">
+								<div class="col-2">
+									<img id="kyle" src="images/kyle-broflovski.png" draggable="true" ondragstart="drag(event)" style="height:40px; border-radius: 50%"/>
+								</div>
+								<div class="col-2">
+
+								</div>
+								<div class="col-6">
+									<p>
+										Kyle Broflovski
+									</p>
+								</div>
+								<div class="col-2">
+									<i class="fa fa-plus" aria-hidden="true"></i>
+								</div>
+							</div>
+						</div>
+						<!-- </li> -->
+						<!-- <li class="list-group-item "> -->
+						<div class="container friend-container">
+							<div class="row">
+								<div class="col-2">
+									<img id="cartman" src="images/wendy-testaburger.png" draggable="true" ondragstart="drag(event)" style="height:40px; border-radius: 50%"/>
+								</div>
+								<div class="col-2">
+
+								</div>
+								<div class="col-6">
+									<p>
+										Wendy Testaburger
+									</p>
+								</div>
+								<div class="col-2">
+									<i class="fa fa-plus" aria-hidden="true"></i>
+								</div>
+							</div>
+						</div>
+						<!-- </li> -->
+						<!-- <li class="list-group-item "> -->
+						<div class="container friend-container">
+							<div class="row">
+								<div class="col-2">
+									<img id="cartman" src="images/jimmy-valmer.png" draggable="true" ondragstart="drag(event)" style="height:40px; border-radius: 50%"/>
+								</div>
+								<div class="col-2">
+
+								</div>
+								<div class="col-6">
+									<p>
+										Jimmy Valmer
+									</p>
+								</div>
+								<div class="col-2">
+									<i class="fa fa-plus" aria-hidden="true"></i>
+								</div>
+							</div>
+						</div>
+						<!-- </li> -->
+						<!-- <li class="list-group-item "> -->
+						<div class="container friend-container">
+							<div class="row">
+								<div class="col-2">
+									<img id="cartman" src="images/butters-stotch.png" draggable="true" ondragstart="drag(event)" style="height:40px; border-radius: 50%"/>
+								</div>
+								<div class="col-2">
+
+								</div>
+								<div class="col-6">
+									<p>
+										Butters Stotch
+									</p>
+								</div>
+								<div class="col-2">
+									<i class="fa fa-plus" aria-hidden="true"></i>
+								</div>
+							</div>
+						</div>
+						<div class="container friend-container">
+							<div class="row">
+								<div class="col-2">
+									<img id="cartman" src="images/butters-stotch.png" draggable="true" ondragstart="drag(event)" style="height:40px; border-radius: 50%"/>
+								</div>
+								<div class="col-2">
+
+								</div>
+								<div class="col-6">
+									<p>
+										Butters Stotch
+									</p>
+								</div>
+								<div class="col-2">
+									<i class="fa fa-plus" aria-hidden="true"></i>
+								</div>
+							</div>
+						</div>
+						<div class="container friend-container">
+							<div class="row">
+								<div class="col-2">
+									<img id="cartman" src="images/butters-stotch.png" draggable="true" ondragstart="drag(event)" style="height:40px; border-radius: 50%"/>
+								</div>
+								<div class="col-2">
+
+								</div>
+								<div class="col-6">
+									<p>
+										Butters Stotch
+									</p>
+								</div>
+								<div class="col-2">
+									<i class="fa fa-plus" aria-hidden="true"></i>
+								</div>
+							</div>
+						</div>
+						<div class="container friend-container">
+							<div class="row">
+								<div class="col-2">
+									<img id="cartman" src="images/butters-stotch.png" draggable="true" ondragstart="drag(event)" style="height:40px; border-radius: 50%"/>
+								</div>
+								<div class="col-2">
+
+								</div>
+								<div class="col-6">
+									<p>
+										Butters Stotch
+									</p>
+								</div>
+								<div class="col-2">
+									<i class="fa fa-plus" aria-hidden="true"></i>
+								</div>
+							</div>
+						</div>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-lg-8">
+			<div class="page-header text-center">
+				<h2 id="timeline">Jack's Rides</h2>
+			</div>
+			<ul class="timeline">
+				<li>
+					<div class="timeline-badge primary"></div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<div class="number">
+								<span class="moveRight">4 / 12</span>
+							</div>
+							<img class="img-responsive" src="images/group1.jpg" />
+
+						</div>
+						<div class="timeline-body">
+							<div class="container ride-container">
+								<div class="row">
+									<div class="col-12 rodeWith">
+										<h5>Rode with:</h5>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-4 miles">
+										<h5>Miles: 26</h5>
+									</div>
+									<div class="col-8 location">
+										<h5><i class="fa fa-map-marker" aria-hidden="true"></i> Bloomington, IN</h5>
+									</div>
+								</div>
+							</div>
+							<p>
+								Awesome ride with great people! Climbed over 1,200 ft and went 26 miles.
+							</p>
+						</div>
+
+						<div class="timeline-footer">
+							<a class="pull-right"><img src="images/strava.png" /></a>
+							<a class="pull-right"><img src="images/mapmyride.png" /></a>
+						</div>
+					</div>
+				</li>
+
+				<li  class="timeline-inverted">
+					<div class="timeline-badge primary"></div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<div class="number">
+								<span class="moveLeft">4 / 13</span>
+							</div>
+							<img class="img-responsive" src="images/landscape.jpg" />
+
+						</div>
+						<div class="timeline-body">
+							<div class="container ride-container">
+								<div class="row">
+									<div class="col-12 rodeWith">
+										<h5>Rode with:</h5>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-4 miles">
+										<h5>Miles: 35</h5>
+									</div>
+									<div class="col-8 location">
+										<h5><i class="fa fa-map-marker" aria-hidden="true"></i> Gary, IN</h5>
+									</div>
+								</div>
+							</div>
+							<p>
+								Awesome ride with great people! Climbed over 1,200 ft and went 26 miles.
+							</p>
+
+						</div>
+
+						<div class="timeline-footer">
+							<a class="pull-right"><img src="images/strava.png" /></a>
+							<a class="pull-right"><img src="images/mapmyride.png" /></a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="timeline-badge primary"></div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<div class="number">
+								<span class="moveRight">4 / 16</span>
+							</div>
+							<img class="img-responsive" src="images/doggo.jpg" />
+
+						</div>
+						<div class="timeline-body">
+							<div class="container ride-container">
+								<div class="row">
+									<div class="col-12 rodeWith">
+										<h5>Rode with:</h5>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-4 miles">
+										<h5>Miles: 20</h5>
+									</div>
+									<div class="col-8 location">
+										<h5><i class="fa fa-map-marker" aria-hidden="true"></i> Chicago, IL</h5>
+									</div>
+								</div>
+							</div>
+							<p>
+								Awesome ride with great people! Climbed over 1,200 ft and went 26 miles.
+							</p>
+						</div>
+						<div class="timeline-footer">
+							<a class="pull-right"><img src="images/strava.png" /></a>
+							<a class="pull-right"><img src="images/mapmyride.png" /></a>
+						</div>
+					</div>
+				</li>
+				<li  class="timeline-inverted">
+					<div class="timeline-badge primary"></div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<div class="number">
+								<span class="moveLeft">4 / 18</span>
+							</div>
+							<img class="img-responsive" src="images/group3.jpg" />
+						</div>
+						<div class="timeline-body">
+							<div class="container ride-container">
+								<div class="row">
+									<div class="col-12 rodeWith">
+										<h5>Rode with:</h5>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-4 miles">
+										<h5>Miles: 8</h5>
+									</div>
+									<div class="col-8 location">
+										<h5><i class="fa fa-map-marker" aria-hidden="true"></i> Bloomington, IN</h5>
+									</div>
+								</div>
+							</div>
+							<p>
+								Awesome ride with great people! Climbed over 1,200 ft and went 26 miles.
+							</p>
+
+						</div>
+						<div class="timeline-footer">
+							<a class="pull-right"><img src="images/strava.png" /></a>
+							<a class="pull-right"><img src="images/mapmyride.png" /></a>
+						</div>
+					</div>
+				</li>
+				<li class="clearfix" style="float: none;"></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>
