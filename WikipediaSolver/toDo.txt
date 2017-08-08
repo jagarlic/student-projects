@@ -1,0 +1,138 @@
+Make sure goalString is always capitalized
+
+satisiablePercent = .8
+# .75 changes which pages are visited
+start = "Science"
+goalString = "Dog"
+goal = wordnet.synset("dog.n.01")
+
+satisfiablePercent = .7
+start = "United_States"
+goalString = "Dog"
+goal = wordnet.synset("dog.n.01")
+
+satisfiablePercent = .7
+# increasing percent to .95 makes this take a longer path
+start = "hat"
+goalString = "cat"
+goal = wordnet.synset("cat.n.01")
+
+satisfiablePercent = .75
+start = "Couch"
+goalString = "Chair"
+goal = wordnet.synset("Chair.n.01")
+
+You can reach the goal in 1 steps.
+['Couch', u'Furniture', 'Chair']
+
+
+--------------------------------------------------------------------------------
+
+Was not able to run:
+
+satisfiablePercent = .7
+start = "Couch"
+goalString = "Lamp"
+goal = wordnet.synset("Lamp.n.01")
+
+After implementing error handling for a satisfiablePercent that is not reachable
+by any of the current obtainable links:
+
+satisfiablePercent = .8
+# changing to .9 makes the path different
+start = "Couch"
+goalString = "Lamp"
+goal = wordnet.synset("Lamp.n.01")
+
+['Couch', u'Cushion', u'Car_seat', u'Headlamp', u'Laser', u'Optical_discs', u'Optical_disc',
+u'Diffraction_grating', u'Flashlight', u'Torch', u'Electric_light', u'Chandlery', u'Candle',
+u'Streetlight', u'Mercury-vapor_lamp', u'Fluorescent_lamp', u'Lantern', u'Kerosene_lamp',
+u'Oil_lamp', 'Lamp']
+You can reach the goal in 18 steps.
+
+
+Before implementation this vas not solvable:
+
+satisfiablePercent = .9
+# changing satisfiablePercent to .95 makes the program take a longer path
+start = "computer"
+goalString = "science"
+goal = wordnet.synset("science.n.01")
+
+After implementation this was the output:
+
+['computer', u'Cryptography', u'Mathematics', 'science']
+You can reach the goal in 2 steps.
+
+I thought this was pretty funny:
+
+satisfiablePercent = .9
+# decreasing satisfiablePercent to .8 reduces path to 5
+start = "poop"
+goalString = "dog"
+goal = wordnet.synset("dog.n.01")
+
+You can reach the goal in 6 steps.
+['poop', u'Stern', u'Winch', u'Aristotle', u'Animal', u'Carnivore', u'Hyaena', u'Hyena']
+
+
+satisfiablePercent = .8
+start = "douche"
+goalString = "toupee"
+goal = wordnet.synset("toupee.n.01")
+
+You can reach the goal in 9 steps.
+['douche', u'Public_toilet', u'Graffiti', u'Spray_paint', u'Fine_art', u'Textiles',
+u'Clothing', u'Headgear', u'Cap', u'Clothing', u'Cloth']
+
+
+satisfiablePercent = .8
+start = "dank"
+goalString = "meme"
+goal = wordnet.synset("meme.n.01")
+
+['dank', '', u'Witchcraft', u'Wisdom', u'Ignorance', u'Knowledge', u'Thought', u'Cognition',
+u'Mental_representation', u'Idea', u'Meme', 'meme']
+You can reach the goal in 10 steps.
+
+from caddy to shack:
+You can reach the goal in 9 steps.
+['caddy', u'Golf_course', u'Driving_range', u'University_of_Washington', u'University_of_Michigan',
+ u'Architecture', u'Building', u'Shack', u'Hut', u'Quonset_hut', u'Nissen_hut']
+
+from outlet to vampire:
+You can reach the goal in 9 steps.
+['outlet', u'Outlet', u'Electrical_outlet', u'DIN', u'Standardization', u'Tradition', u'Belief',
+u'Deity', u'Demon', u'Satan', u'Angel']
+
+['fuck', u'Shit']
+You can reach the goal in 0 steps.
+
+PROOF OUR BIDIRECTIONAL WORKS:
+
+satisfiablePercent = .8
+start = "indiana"
+goalString = "Mouse"
+goal = wordnet.synset("mouse.n.01")
+
+Mastodons
+House_mouse
+Mammal
+Mammal
+You can reach the goal in 3 steps.
+['indiana', u'Mastodons', u'Mammal', u'House_mouse', 'Mouse']
+
+--------------------------------------------------------------------------------
+
+Some proper nouns are usable: Indiana (all states and countries)
+
+--------------------------------------------------------------------------------
+
+satisfiablePercent = .8
+# reducing the % to .6 makes the program run faster, but also visit more pages.
+start = "divorce"
+goalString = "Margarine"
+goal = wordnet.synset("margarine.n.01")
+
+Performing bidirectional where the goal node looks for the last node start visited
+is actually fucking terrible. Need to instead implement two nextPage functions.
